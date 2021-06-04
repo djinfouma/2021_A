@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 6px;
+  }
+
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #081F54;
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #103488; 
+  }
+
+body { 
+  background-image: url("./immagini/back.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.grafici {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.grafici h2 {
+  padding-top: 12.5%;
+  padding-bottom: 5%;
+}
+
+
+#due, #tre {
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+
+.navbar{
+  position:fixed;
+  width: 100%;
+}
+
+#container {
+  display: flex;
+  padding: 2%;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 200%;
+  color:#263238;
+}
+
+#spezza {
+  padding-top: 10%;
+}
+
+h4 {
+  color:#263238;
+}
+
+
+h2, h3{
+  color:#263238;
+  padding-bottom: 5%;
+}
+
+p {
+  color:#263238;
+  font-weight: 400;
+  font-size: 90%;
+}
+
+p a {
+  text-decoration: none;
+  color: #407BFF;
+  font-weight: bold;
+}
+
+
+#container ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  min-width: 80%;
+  justify-content: center;
+}
+
+li{
+  padding: 2% 5%;
+}
+
+li a {
+  text-decoration: none;
+}
+
+#intro, #dati, #about, #hb {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+#home{
+  background-color: #081F54;
+  padding: 13% 40%;
+  border-radius: 3em;
+  border:none;
+  color: white;
+  font-size: 100%;
+  box-shadow: 4px 3px 17px #113587;
+}
+
+.tog {
+  background-color: #ECF2FF;
+  border-radius: 3em;
+  padding: 10px 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+  border:none;
+  color: #081F54;
+  font-size: 80%;
+  font-weight: 600;
+  box-shadow: 4px 3px 17px #99a7c9;
+  cursor: pointer;
+}
+
+#home:hover, .tog:hover {
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+
+}
+
+
+@keyframes bounce {
+
+  0%{
+
+  }
+  50%{
+    transform: translateY(-5px);
+  }
+
+  100%{
+ 
+  }
+}
+
+
+.present{
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+}
+
+
+.test1{
+  width: 45%;
+  padding-top: 18%;
+  padding-left: 18%;
+  padding-right: 2%;
+}
+
+
+.test1 h1{
+  color: whitesmoke;
+}
+
+
+.test1 p {
+text-align: right;
+color: whitesmoke;
+}
+
+
+.docs{
+  width: 35%;
+  padding-top: 12%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  
+}
+
+#doc1:hover, #doc2:hover,#doc3:hover,#doc4:hover,#doc5:hover {
+  animation-name: up;
+  animation-duration: 1s;
+
+}
+
+@keyframes up {
+
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-5px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.svggen{
+  width: 35%;
+  padding-top: 25%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  
+}
+
+.svgdx{
+  width: 35%;
+  padding-top: 25%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  
+}
+
+#svgdx{
+  width: 35%;
+  padding-top: 15%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+}
+
+
+.svgsx{
+  width: 35%;
+  padding-top: 25%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  
+}
+
+
+
+.testdx{
+  width: 45%;
+  padding-top: 10%;
+  padding-left: 3%;
+  padding-right: 6%;
+}
+
+
+.testgen{
+  width: 45%;
+  padding-top: 20%;
+  padding-left: 3%;
+  padding-right: 6%;
+}
+
+.testsx{
+  width: 45%;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+.altro {
+  width: 35%;
+  padding-top: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}
+
+.end {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  padding-top: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: justify;
+}
+
+footer {
+  background-image: url("./immagini/footer.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 20% 48%;
+
+}
+
+hr {
+  border: 0px;
+  height: 2px;
+  background: whitesmoke;
+}
+
+.altro p, .altro ul, .copy p{
+  color: white;
+}
+
+.altro p {
+  margin-top: 6%;
+}
+
+#team {
+  list-style-type: none;
+}
+
+#team li {
+  padding-left: 0%;
+  padding-top: 5%;
+}
+
+.copy {
+  padding-left: 24%;
+  padding-right: 24%;
+}
+
+.copy p{
+  padding-top: 3%;
+  padding-bottom: 2%;
+  font-size: 60%;
+}
+
+.pills {
+  animation: fade;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.pills2 {
+  animation: fade;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+.germe {
+  animation: fade;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.bars {
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0%{}
+  50%{
+    opacity:0%;
+  }
+  100%{}
+}
+
+.bars2 {
+  animation-name: su;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes su {
+  0%{}
+  50%{
+    transform:translateY(-50px);
+    height: 82.65px;
+  }
+  100%{}
+}
+
+.bars1 {
+  animation-name: giu;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes giu {
+  0%{}
+  50%{
+    transform:translateY(40px);
+    height: 108.19px;
+  }
+  100%{}
+}
+
+.bars3 {
+  animation-name: giu2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes giu2 {
+  0%{}
+  50%{
+    transform:translateY(60px);
+    height: 117.19px;
+  }
+  100%{}
+}
+
+.ruota {
+  animation-name: rotation;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 25.5% 27.5%;
+}
+
+@keyframes rotation {
+  from{}
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+.ruota2 {
+  animation-name: rotation;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+  transform-origin: 25.5% 39%;
+}
+
+#z1, #z2, #z3 {
+  animation-name: fade;
+  animation-iteration-count: infinite;
+}
+
+#z1 {
+  animation-duration: 5s;
+}
+
+#z2 {
+  animation-duration: 6s;
+}
+#z3 {
+  animation-duration: 7s;
+}
+
+#cuore, .cuore2 {
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.cuore2 {
+  animation-delay: 0.1s;
+}
